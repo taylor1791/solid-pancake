@@ -1,0 +1,20 @@
+{
+  "name": "solid-pancake",
+  "version": "1.0.0",
+  "description": "A BLE experiment",
+  "main": "index.js",
+  "repository": "https://github.com/taylor1791/solid-pancake.git",
+  "author": "taylor1791@users.noreply.github.com",
+  "license": "MIT",
+  "dependencies": {
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.4.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.4.4"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "dev": "NODE_ENV=development webpack-dev-server --hot"
+  }
+}
