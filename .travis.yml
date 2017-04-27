@@ -1,3 +1,4 @@
+language: node_js
 script:
 - test "$TRAVIS_REPO_SLUG" == "taylor1791/solid-pancake" && test "$TRAVIS_PULL_REQUEST"
   == "false" && test "$TRAVIS_BRANCH" == "master" && bash bin/deploy.sh
