@@ -5,9 +5,7 @@ node_js:
 
 before_install:
 - curl -o- -L https://yarnpkg.com/install.sh | bash
-- cat "$HOME/.bashrc"
-- source "$HOME/.bashrc"
-- echo $PATH
+- PATH="$HOME/.yarn/bin:$PATH"
 
 install:
 - cd client
