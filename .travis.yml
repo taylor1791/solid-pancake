@@ -1,0 +1,6 @@
+script:
+- test "$TRAVIS_REPO_SLUG" == "taylor1791/solid-pancake" && test "$TRAVIS_PULL_REQUEST"
+  == "false" && test "$TRAVIS_BRANCH" == "master" && bash bin/deploy.sh
+env:
+  global:
+    secure: QXAIyM1zHSRmirgbKHj3nr+CfxeG5WEiYLkzec1Bn3o+lOh63il93FCr/BXn/K4jqQhebBHafqVVakQsij8EBEgmMOYmuDQRMgbs9MPdwOifwM9DTdMNxoWg6sAiAX3HvFcGO8Xc5ZikoDWlyGxvH5F0zu0RVC7rk/rz70Dd3TAfWUsQzjDe0YwDSDYDhG5dho3QBW0Eh8en0SuNiSPUDCQja8d5f+bGJWixxxX1WNxnIi3wapCaWtU9bXHvE9FcsdMy7bReV/T/mMhkZ0vniGR5Wl3qSi8Cp9FL+biRFbAdcfINnionIt/YF7RupyX4/Ypj/OuFhU4kGD2Bn813qWlSLVx6hVBfdnHlwOlf7exEmJkH2DSbB7FKIFX8sJP8n9djikXUwUhfr+ZpYPkWcunZ72o0KeMRawo1Z4GhaRVK48ArwjfSLra+tehi8bVf9hoWXv6kEbb2GPEdzMisHL98FQNGHyBZrCv4IZvKtNgnQ7vM5LloZlG6grR7B/zVRHIrBxR+qNVu123T6N16+RDLNJkMA0rA7KDysC0+WIOh6XG0oqNLSnyDkGvwqhCRnN0TiH26ruvSVCTUiVrZyQ9Mssry+maFal22yan7j3SnJSWdtjpFy227FRq+wvT6gLxZJze8DaYB5+l8OlBBiAWVZmm/ENbftSaH+NG3W2M=
