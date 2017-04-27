@@ -53,7 +53,7 @@ function chooseSound(f) {
 function playSound(sound) {
 
   (sound.file ? Promise.resolve(sound.file) : new Promise((res, rej) => {
-    fetch(`/sounds/${sound.name}`)
+    fetch(`sounds/${sound.name}`)
       .then(r => r.arrayBuffer())
       .then(buffer => {
         context.decodeAudioData(buffer, data => {
