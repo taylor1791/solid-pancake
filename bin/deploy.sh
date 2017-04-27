@@ -3,7 +3,6 @@
 rev=$(git rev-parse --short HEAD)
 
 pushd client
-yarn --production
 yarn build
 cp -R assets/* dist/
 pushd dist

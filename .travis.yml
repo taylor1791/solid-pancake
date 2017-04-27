@@ -3,8 +3,12 @@ language: node_js
 node_js:
 - stable
 
-install:
+pre_install:
 - curl -o- -L https://yarnpkg.com/install.sh | bash
+
+install:
+- cd client
+- yarn --production
 
 script:
 - test "$TRAVIS_REPO_SLUG" == "taylor1791/solid-pancake" && test "$TRAVIS_PULL_REQUEST"
