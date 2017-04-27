@@ -7,8 +7,8 @@ yarn build
 cp -R assets/* dist/
 pushd dist
 
-git config user.name "Travis CI"
-git config user.email "$COMMIT_AUTHOR_EMAIL"
+git config --global user.name "Travis CI"
+git config --global user.email "$COMMIT_AUTHOR_EMAIL"
 git init
 
 git add .
