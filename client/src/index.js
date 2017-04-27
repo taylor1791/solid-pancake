@@ -3,12 +3,12 @@ import {connect} from './puck';
 const pucks = [];
 
 function render() {
-  const html = `
-    <button id="add">Add a device</button>
-    <ul>
-      ${pucks.map(renderPuck)}
-    </ul>
-  `;
+  const html = [
+    '<button id="add">Add a device</button>',
+    '<ul>',
+      pucks.map(renderPuck).join(''),
+    '</ul>',
+  ].join('');
 
   document.documentElement.innerHTML = html;
 
