@@ -8,8 +8,9 @@ before_install:
 - PATH="$HOME/.yarn/bin:$PATH"
 
 install:
-- cd client
+- pushd client
 - yarn --production
+- popd
 
 script:
 - test "$TRAVIS_REPO_SLUG" == "taylor1791/solid-pancake" && test "$TRAVIS_PULL_REQUEST"
